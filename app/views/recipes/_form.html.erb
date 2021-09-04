@@ -1,0 +1,21 @@
+<%= form_for(@recipe) do |f| %>
+    <p><%= f.label :Nome %></p>
+    <p><%= f.text_field :name %></p>
+
+    <p><%= f.label :Ingredientes %></p>
+    <p><%= f.text_area :stuff, cols: 30, rows: 10 %></p>
+
+    <p><%= f.label :Calorias %></p>
+    <p><%= f.number_field :calories %></p>
+
+    <p><%= f.label :Modo_de_preparo %></p>
+    <p><%= f.text_area :prepare_mode, cols: 30, rows: 10 %></p>
+
+    <p><%= f.label :Custo %></p>
+    <p><%= f.number_field :cost %></p>
+
+    <p>
+        <%= f.submit %>
+        <%= link_to 'Cancelar', root_path %>
+    </p>
+<% end %>
