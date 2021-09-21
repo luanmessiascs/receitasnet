@@ -6,4 +6,12 @@ module RecipesHelper
             recipe.calories
         end
     end
+
+    def imagem(recipe)
+        if recipe.poster.blank?
+            image_tag('foto-nao-disponivel.jpeg')
+        else
+            image_tag(recipe.poster)
+        end
+    end
 end
