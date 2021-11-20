@@ -7,6 +7,8 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import "../../assets/images/receitanet.png"
+import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js"
 
 Rails.start()
 Turbolinks.start()
